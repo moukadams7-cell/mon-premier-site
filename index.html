@@ -3,46 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ma Première Page Web - Tayé</title>
- <link rel="stylesheet" href="style.css">
+  <title>Tayé - Développeur Web</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <div class="container">
-  <header>
-    <h1>Bienvenue, je suis Tayé</h1>
-    <img src="https://via.placeholder.com/300x300/3498db/ffffff?text=Tayé" alt="Photo de Tayé" width="150">
-    <p>Je m'appelle <strong>Tayé</strong> et j'apprends le HTML.</p>
-  </header>
+    <!-- HEADER -->
+    <header class="hero">
+      <div class="hero-content">
+        <img src="https://via.placeholder.com/300x300/3498db/ffffff?text=Tayé" alt="Tayé" class="profile-pic">
+        <h1>Salut, je suis <span class="highlight">Tayé</span></h1>
+        <p class="subtitle">Développeur Web Full Stack en formation</p>
+        <div class="social-links">
+          <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <button id="darkModeToggle" class="btn-secondary">
+          <i class="fas fa-moon"></i> Dark Mode
+        </button>
+      </div>
+    </header>
 
-  <main>
-    <h2>À propos de moi</h2>
-    <p>Voici 3 choses que j'aime :</p>
-    <ul>
-      <li>Le code</li>
-      <li>Les pizzas</li>
-      <li>Apprendre de nouvelles choses</li>
-    </ul>
+    <!-- ABOUT -->
+    <section class="about">
+      <h2>À propos</h2>
+      <p>Passionné de code, je construis des sites web modernes avec HTML, CSS, JavaScript. Actuellement en formation intensive pour devenir développeur full stack.</p>
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Git</span>
+        <span class="skill">Responsive</span>
+      </div>
+    </section>
 
-    <h2>Mes objectifs</h2>
-    <ol>
-      <li>Maîtriser HTML</li>
-      <li>Apprendre CSS</li>
-      <li>Créer des sites web impressionnants</li>
-    </ol>
+    <!-- PROJECTS -->
+    <section class="projects">
+      <h2>Projets</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-img placeholder">Site Vitrine</div>
+          <h3>Mon Premier Site</h3>
+          <p>Page interactive avec HTML, CSS, JS. Déployée sur Vercel.</p>
+          <a href="https://mon-premier-site-blush.vercel.app" target="_blank" class="btn-primary">Voir le site</a>
+        </div>
+        <div class="project-card">
+          <div class="project-img placeholder">À venir</div>
+          <h3>Projet React</h3>
+          <p>En cours de développement...</p>
+          <a href="#" class="btn-primary disabled">Bientôt</a>
+        </div>
+      </div>
+    </section>
 
-    <h3>Mes réseaux</h3>
-    <p>
-      <a href="https://github.com" target="_blank">Mon GitHub</a> | 
-      <a href="https://twitter.com" target="_blank">Mon Twitter</a>
-    </p>
+    <!-- CONTACT -->
+    <section class="contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Ton nom" required>
+        <input type="email" placeholder="Ton email" required>
+        <textarea placeholder="Ton message" rows="5" required></textarea>
+        <button type="submit" class="btn-primary">Envoyer</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
 
-    <button>Clique ici !</button>
-  </main>
-
-  <footer>
-    <p>© 2025 - Tayé - Fait avec ❤️ et HTML + CSS +JS</p>
-  </footer>
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Tayé - Développeur Web | <a href="#">CV PDF</a></p>
+    </footer>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
